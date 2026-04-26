@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Zombie Block Survival</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="ui">
+    <div>Score: <span id="score">0</span></div>
+    <div>Wave: <span id="wave">1</span></div>
+    <div>Weapon: <span id="weapon">AK</span></div>
+</div>
+
+<div id="shop">
+    <h2>SHOP</h2>
+    <button onclick="buyWeapon('sniper')">Sniper (200)</button>
+    <button onclick="buyWeapon('ak')">AK (free)</button>
+    <button onclick="buyWeapon('shotgun')">Shotgun (300)</button>
+    <button onclick="buyWeapon('minigun')">Minigun (1000)</button>
+    <button onclick="buyAlly()">Hire Gun Dude (67)</button>
+    <button onclick="closeShop()">Close</button>
+</div>
+
+<canvas id="game"></canvas>
+
+<script src="game.js"></script>
+</body>
+</html>
